@@ -4,7 +4,7 @@ import { Copy } from 'lucide-react'
 export default function DetailThread() {
   return (
     <div className="h-screen mt-[60px] bg-beige relative">
-      <img src="../src/assets/bg-threads.png" alt="Jumbotron Background" className="absolute inset-0 w-full h-full object-cover" />
+      <img src="../src/assets/bg-questions.png" alt="Jumbotron Background" className="absolute inset-0 w-full h-full object-cover" />
       <div className="relative">
         <div className="flex-col flex w-max w-8/12 mx-auto">
           <div>

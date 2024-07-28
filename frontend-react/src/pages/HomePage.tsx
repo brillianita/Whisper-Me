@@ -104,7 +104,7 @@ export default function HomePage() {
                 <CardDescription className="text-black"><p className=""><b>Limited Insight: </b>Access up to 100 responses. Perfect for casual users who want a taste of anonymous feedback.</p></CardDescription>
               </CardHeader>
               <CardFooter className="flex justify-center">
-                <Button className="bg-navy hover:bg-dark-orange hover:text-navy">Try Now!</Button>
+                <Button className="bg-navy hover:bg-navyy">Try Now!</Button>
               </CardFooter>
             </Card>
             <Card data-aos="flip-right" className="w-[350px] h-[340px] shadow-2xl bg-peach">
@@ -114,7 +114,7 @@ export default function HomePage() {
                 <CardDescription className="text-black"> <p><b>Unlimited Responses: </b>Dive deep with unlimited responses. Ideal for those who seek extensive interactions and full insights without boundaries.</p></CardDescription>
               </CardHeader>
               <CardFooter className="flex justify-center">
-                <Button className="bg-navy hover:bg-dark-orange hover:text-navy">Try Now!</Button>
+                <Button className="bg-navy hover:bg-navy">Try Now!</Button>
               </CardFooter>
             </Card>
           </div>

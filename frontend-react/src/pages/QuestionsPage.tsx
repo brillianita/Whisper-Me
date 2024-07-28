@@ -13,32 +13,32 @@ import { Label } from "@/components/ui/label"
 import { Button } from "@/components/ui/button"
 import { Copy, Plus } from 'lucide-react'
 import { Textarea } from "@/components/ui/textarea"
-import { useNavigate } from 'react-router-dom';
+import { To, useNavigate } from 'react-router-dom';
 
-export default function Threads() {
+export default function Questions() {
   const navigate = useNavigate();
 
-  const handleButtonClick = (path) => {
+  const handleButtonClick = (path: To) => {
     navigate(path);
   };
 
   return (
     <div className="h-screen mt-[60px] bg-beige relative">
-      <img src="../src/assets/bg-threads.png" alt="Jumbotron Background" className="absolute inset-0 w-full h-full object-cover" />
+      <img src="../src/assets/bg-questions.png" alt="Jumbotron Background" className="absolute inset-0 w-full h-full object-cover" />
       <div className="relative">
         <div className="mx-auto">
-          <h2 className="text-4xl font-bold text-center pb-5 pt-5">My Threads</h2>
+          <h2 className="text-4xl font-bold text-center pb-5 pt-5">My Questions</h2>
           <div className="w-[200px] border-t-[4px] border-navy mx-auto"></div>
         </div>
         <div className="flex-col flex w-max w-8/12 mx-auto">
           <div className="flex justify-end">
             <Dialog>
               <DialogTrigger asChild>
-                <Button className="bg-dark-orange text-black hover:bg-dark-orange right-0"><Plus className="mr-3" />Create New Thread</Button>
+                <Button className="bg-navy text-white right-0"><Plus className="mr-3" />Create New Question</Button>
               </DialogTrigger>
               <DialogContent className="sm:max-w-md">
                 <DialogHeader>
-                  <DialogTitle>Create Thread</DialogTitle>
+                  <DialogTitle>Create Question</DialogTitle>
                   <DialogDescription>
                     Share your link and anyone will be able to view this.
                   </DialogDescription>
@@ -86,7 +86,7 @@ export default function Threads() {
                 </Button>
                 <div className="flex justify-between items-end mt-3">
                   <p className="text-black/[0.5]">10 June 2024</p>
-                  <Button variant="outline" className="bg-navy hover:bg-dark-orange hover:text-navy text-white" onClick={() => handleButtonClick('/DetailThread')}>Open</Button>
+                  <Button variant="outline" className="bg-navy text-white hover:bg-navy hover:text-white" onClick={() => handleButtonClick('/DetailQuestion')}>Open</Button>
                 </div>
               </div>
             </div>
@@ -100,7 +100,7 @@ export default function Threads() {
                 </Button>
                 <div className="flex justify-between items-end mt-3">
                   <p className="text-black/[0.5]">10 June 2024</p>
-                  <Button variant="outline" className="bg-navy hover:bg-dark-orange hover:text-navy text-white" onClick={() => handleButtonClick('/DetailThread')}>Open</Button>
+                  <Button variant="outline" className="bg-navy hover:bg-dark-orange hover:text-navy text-white hover:bg-navy hover:text-white" onClick={() => handleButtonClick('/DetailQuestion')}>Open</Button>
                 </div>
               </div>
             </div>
@@ -114,7 +114,7 @@ export default function Threads() {
                 </Button>
                 <div className="flex justify-between items-end mt-3">
                   <p className="text-black/[0.5]">10 June 2024</p>
-                  <Button variant="outline" className="bg-navy hover:bg-dark-orange hover:text-navy text-white" onClick={() => handleButtonClick('/DetailThread')}>Open</Button>
+                  <Button variant="outline" className="bg-navy text-white hover:bg-navy hover:text-white" onClick={() => handleButtonClick('/DetailQuestion')}>Open</Button>
                 </div>
               </div>
             </div>
